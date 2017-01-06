@@ -25,7 +25,11 @@ $autoHeight = $block->getAutoHeight() ? 'true' : 'false';
 			$(".mp-owl-carousel").owlCarousel({
 				navigation: <?php echo $nav;?>,
 				items: <?php echo $items;?>,
-				loop: <?php echo $loop;?>,
+				//loop: <?php echo $loop;?>,
+				loop: true,
+				smartSpeed:450,
+				autoplay:true,
+				autoplayTimeout: 2000,
 				autoHeight: <?php echo $autoHeight;?>,
 			});
 		});
